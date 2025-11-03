@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E8F0FE;
+}
+
+header {
+    text-align: center;
+    font-size: 22px;
+    font-variant: small-caps;
+    border: solid 1px #A0A0A0;
+    background-color: #4A90E2;
+    color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+header h1 {
+    letter-spacing: 0.15cm;
+    color: #FFFFFF;
+}
+
+footer {
+    bottom: 0;
+    background-color: #2C3E50;
+    color: #ECF0F1;
+    height: 2.5em;
+    left: 0;
+    padding: 1%;
+    position: fixed;
+    font-size: small;
+    width: 100%;
+}
+
+nav {
+    margin: 0 0 10% 0;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #34495E;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0.5%;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    border: solid 3px #A0A0A0;
+    border-radius: 10px;
+    background-color: #5D6D7E;
+}
+
+nav ul li {
+    position: relative;
+    display: block;
+    padding: 1%;
+    width: 130px;
+    background-color: #7F8C8D;
+    border: solid 1px #A0A0A0;
+    margin-right: 1px;
+    line-height: 40px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li:hover {
+    background-color: #34495E;
+    transform: scale(1.05);
+}
+
+nav a {
+    text-decoration: none;
+    color: #ECF0F1;
+    font-weight: 600;
+}
+
+nav ul li:hover > .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #BDC3C7;
+    min-width: 150px;
+    border-radius: 5px;
+    padding: 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown li {
+    width: 150px;
+    background-color: #95A5A6;
+}
+
+.dropdown li:hover {
+    background-color: #7F8C8D;
+}
+
+.dropdown li a {
+    padding: 10px;
+    display: block;
+}
+
+/* Опросник */
+
+input[type=reset], input[type="button"] {
+    background-color: #4A90E2;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+input[type=reset]:hover, input[type="button"]:hover {
+    background-color: #357ABD;
+    transform: scale(1.05);
+}
+
+input[type=reset]:active, input[type="button"]:active {
+    background-color: #2C5A91;
+    transform: scale(0.95);
+}
+
+input[type=text], input[type=number]{
+    font: 14px/1.5 "Montserrat", sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 10px;
+}
+
+input[type=radio]:hover{
+    background-color: #bebebe;
+    font-size: 20px;
+    padding: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+input[type=checkbox]{
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}

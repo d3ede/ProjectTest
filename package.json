@@ -1,0 +1,12 @@
+{
+  "name": "matviei-tests",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "jest --coverage",
+    "coverage": "jest --coverage --collectCoverageFrom=js/*.js"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
